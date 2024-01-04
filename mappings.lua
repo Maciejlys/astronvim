@@ -7,7 +7,8 @@ return {
   -- first key is the mode
   n = {
     ["<C-d>"] = {"<C-d>zz"},
-    ["<C-u>"] = {"<C-u>zz"}
+    ["<C-u>"] = {"<C-u>zz"},
+    ["<Tab>"] = { function() require("astronvim.utils.buffer").nav(vim.v.count > 0 and vim.v.count or 1) end, desc = "Next buffer" }
   },
   t = {
     ["<ESC>"] = {"<Cmd>ToggleTerm<CR>"}
