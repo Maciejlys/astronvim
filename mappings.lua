@@ -9,4 +9,7 @@ return {
     ["<C-d>"] = {"<C-d>zz"},
     ["<C-u>"] = {"<C-u>zz"}
   },
+  t = {
+    ["<ESC>"] = {"<Cmd>ToggleTerm<CR>"}
+  }
 }
