@@ -8,9 +8,12 @@ return {
   n = {
     ["<C-d>"] = {"<C-d>zz"},
     ["<C-u>"] = {"<C-u>zz"},
-    ["<Tab>"] = { function() require("astronvim.utils.buffer").nav(vim.v.count > 0 and vim.v.count or 1) end, desc = "Next buffer" }
+    ["<leader><leader>"] = {"<Cmd>Neotree float reveal reveal_force_cwd<CR>", desc="Neotree float style"},
+    ["<Tab>"] = { function() require("astronvim.utils.buffer").nav(vim.v.count > 0 and vim.v.count or 1) end, desc = "Next buffer" },
+    ["<S-Tab>"] = { function() require("astronvim.utils.buffer").nav(vim.v.count > 0 and vim.v.count or -1) end, desc = "Prev buffer" }
   },
   t = {
-    ["<ESC>"] = {"<Cmd>ToggleTerm<CR>"}
+    ["<ESC>"] = {"<Cmd>ToggleTerm<CR>"},
+    ["<Tab>"] = {"<C-\\><C-n>"}
   }
 }
