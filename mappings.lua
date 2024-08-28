@@ -14,6 +14,6 @@ return {
   },
   t = {
     ["<ESC>"] = {"<Cmd>ToggleTerm<CR>"},
-    ["<Tab>"] = {"<C-\\><C-n>"}
+    ["<S-Tab>"] = {"<C-\\><C-n>"}
   }
 }
