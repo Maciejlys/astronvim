@@ -10,7 +10,8 @@ return {
     ["<C-u>"] = {"<C-u>zz"},
     ["<leader><leader>"] = {"<Cmd>Neotree float reveal reveal_force_cwd<CR>", desc="Neotree float style"},
     ["<Tab>"] = { function() require("astronvim.utils.buffer").nav(vim.v.count > 0 and vim.v.count or 1) end, desc = "Next buffer" },
-    ["<S-Tab>"] = { function() require("astronvim.utils.buffer").nav(vim.v.count > 0 and vim.v.count or -1) end, desc = "Prev buffer" }
+    ["<S-Tab>"] = { function() require("astronvim.utils.buffer").nav(vim.v.count > 0 and vim.v.count or -1) end, desc = "Prev buffer" },
+    ["<leader>ts"] = {"<Cmd>ToggleTerm size=50 dir=%:p:h direction=vertical<CR>", desc="Toggle term vertical splt small"},
   },
   t = {
     ["<ESC>"] = {"<Cmd>ToggleTerm<CR>"},
